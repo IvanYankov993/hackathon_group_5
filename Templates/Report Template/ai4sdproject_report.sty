@@ -1,0 +1,142 @@
+\ProvidesPackage{ai4sdproject_report}
+
+%define variables here
+\newcommand{\AISDLong}{AI 4 Science Discovery Network+}
+\newcommand{\AISDShort}{AI4SD}
+
+%PREAMBLE PAGES defined here
+%%%%title page
+\newcommand{\AISDTitlePage}{\thispagestyle{empty}
+	\begin{center}
+	\includegraphics[width=1.7in]{./media/logo.png}
+
+	
+	{\Large\textbf{\AISDLong}}
+	\end{center}
+\vspace{9\baselineskip}
+
+\begin{center}
+{\large
+Group: \groupnumber \\
+Challenge: \challengename \\
+AI4SD ML Summer School Report \\
+20-24th June 2022
+}
+
+\vspace{7\baselineskip}
+
+{\large Project Team: \studentlist
+}
+\vspace{6\baselineskip}
+
+{\large Report Date: \reportdate} %reportdate
+\end{center}
+
+\vspace{12\baselineskip}
+
+{\large \reporttitle} %reporttitle
+\newpage}
+
+%%%%publishing info
+\newcommand{\publishinginfo}{\thispagestyle{empty}
+\noindent
+Group: \groupnumber \\
+\noindent\ Challenge: \challengename \\ %title
+\reporttitle \\ %reporttitle
+Report Date: \reportdate \\%reportdate
+DOI: \doi \\%DOI
+Published by University of Southampton %publisher
+
+\vspace{\baselineskip}
+%networkinfo
+\noindent\textbf{Network: Artificial Intelligence and Augmented Intelligence for Automated \\ 
+Investigations for Scientific Discovery} \\
+This Network+ is EPSRC Funded under Grant No: EP/S000356/1 \\
+
+\noindent Principal Investigator: \textit{Professor Jeremy Frey} \\
+Co-Investigator: \textit{Professor Mahesan Niranjan} \\
+Network+ Coordinator: \textit{Dr Samantha Kanza}}
+
+%%%%contents
+\newcommand{\AISDContents}{\newpage
+\thispagestyle{empty}
+\pdfbookmark[section]{\contentsname}{Contents}
+\tableofcontents
+\newpage}
+
+
+%%%%%%%%%%%%
+%Packages below this line
+%%%%%%%%%%%%
+
+\usepackage{graphicx} %graphics package
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage[american,british,UKenglish]{babel}
+%\hypersetup{colorlinks=false}   % Set to false for black/white printing
+
+\usepackage{cite}
+\usepackage{notoccite} %doesn't display citation in contents %%%
+\usepackage{latexsym}
+\usepackage[normalem]{ulem}
+\usepackage{array}
+
+\usepackage[title, titletoc, header]{appendix} %is this needed 
+\usepackage[nottoc]{tocbibind} % for displaying bibliography correctly in the TOC %%%
+\usepackage{footnote} %%%
+\usepackage[justification=centering]{caption}
+\usepackage{rotating}
+
+\usepackage{placeins} %to flush floats out before starting a new section (doesn't have to leave a clear page)
+\usepackage{setspace}
+%\usepackage{subcaption}
+%\usepackage{afterpage}
+%\usepackage{pdflscape}
+%\usepackage{listings} %%%%
+
+%%%Tables%%%
+\usepackage{multicol}
+\usepackage{longtable}
+\usepackage{makecell} % for using linebreaks in tables ex. \makecell{...\\...}
+\usepackage{multirow} % for spanning multiple rows  ex. \multirow{''num_rows''}{''width''}{''contents''}
+%\usepackage{booktabs}
+%\usepackage{hhline}
+\renewcommand{\arraystretch}{1.5}
+
+\usepackage[british]{isodate} %%%
+\usepackage{fancyhdr}  %from ecsthesis
+\usepackage{amsmath,amsfonts,amssymb,amscd,xspace} %from ecsthesis
+\usepackage[paperheight=11.69in,paperwidth=8.26in,left=1.0in,right=1.0in,top=1.0in,bottom=1.0in,headheight=1in]{geometry}
+
+%%%Links%%%
+\definecolor{darkblue}{RGB}{0,0,153}
+\usepackage[colorlinks, pdfborder={0 0 0}, urlcolor=darkblue, linkcolor=black]{hyperref} %loaded last due to interactions with titletoc , moved back up? %added hidelinks to remove the red boxes around crosslinks
+
+%\usepackage{subfig}
+\usepackage{wrapfig}
+%\usepackage{wasysym}
+%\usepackage{adjustbox}
+%\usepackage{ragged2e}
+\usepackage{changepage}
+%\usepackage{hhline}
+
+%\usepackage{tabto}
+\usepackage{float}
+\usepackage{flowchart}
+%\usepackage[utf8]{inputenc}
+%\usepackage[T1]{fontenc}
+%\TabPositions{0.5in,1.0in,1.5in,2.0in,2.5in,3.0in,3.5in,4.0in,4.5in,5.0in,5.5in,6.0in,}
+%\setlength{\parindent}{0pt} %stops paragraphs indenting
+
+\usepackage{bookmark} %for adding toc to bookmarks
+
+\overfullrule=0pt
+
+ %%%%%%%%%%%%  Set Depths for Sections  %%%%%%%%%%%%%%
+% 1) Section
+% 1.1) SubSection
+% 1.1.1) SubSubSection
+% 1.1.1.1) Paragraph
+% 1.1.1.1.1) Subparagraph
+\setcounter{tocdepth}{5}
+\setcounter{secnumdepth}{5}
+

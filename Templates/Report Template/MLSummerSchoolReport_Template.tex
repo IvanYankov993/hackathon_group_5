@@ -1,0 +1,155 @@
+
+\documentclass[11pt, titlepage]{article}
+\usepackage{ai4sdproject_report}
+
+%%%%%%%%%%%%%%
+%Instructions%
+%%%%%%%%%%%%%%
+%Edit the section below replacing the capitalised text with the information for the specific report
+%Complete the sections of the report as necessary
+%%%%%%%%%%%%%%
+
+%%%%%% EDIT THIS SECTION %%%%%%
+%replace the capitalised text with the relevant information - don't remove the \xspace
+\newcommand{\groupnumber}{GROUP NUMBER HERE\xspace}  %INSERT GROUP NUMBER HERE
+\newcommand{\challengename}{CHALLENGE NAME HERE\xspace} %INSERT CHALLENGE NAME HERE
+\newcommand{\studentlist}{TEAM LIST HERE [Student1 name (Institution), Student2 name (institution), etc]\xspace}  %INSERT TEAM LIST HERE
+\newcommand{\reportdate}{REPORT DATE HERE\xspace} %INSERT PUBLISHED DATE HERE dd/mm/yyyy
+\newcommand{\reporttitle}{AI4SD-SummerSchool-Series:Report[x]\xspace} %replace x with report number - S.Kanza will provide this
+\newcommand{\doi}{DOI HERE} %INSERT DOI HERE - S.Kanza will provide this
+
+%%%%%%
+% Can also use the following commands for AI4SD names
+% \AISDLong gives - AI 4 Science Discovery Network+
+% \AISDShort gives - AI4SD
+
+%%%%%
+%Inserting graphics %
+%\begin{figure}[h]
+%\centering
+%\includegraphics[width=\textwidth]{./media/filename}
+%\caption{caption }
+%\end{figure}
+
+\begin{document}
+
+%%%%%%TITLE PAGE%%%%%%
+\AISDTitlePage{}
+%%%%%PUBLISHING INFO%%%%%
+\publishinginfo{}
+%%%%%Contents%%%%%
+\AISDContents{}
+
+\setcounter{page}{1}
+\section{Project Details}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|p{1.5in}|p{4.5in}|}
+\hline
+%row no:1
+Group Number & {\groupnumber} \\
+\hline
+%row no:2
+Challenge Name & {\challengename} \\ %S Kanza to insert
+\hline
+%row no:3
+Project Dates & 20-24th June 2022
+ \\ %insert project dates here
+\hline
+%row no:5
+Website & 
+\href{xxx}{Link to website of project/ project group - if applicable} \\ %insert project / group website if applicable
+\hline
+\end{tabular}
+ \end{table}
+
+
+\section{Project Team}
+\subsection{Project Student}
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|p{2in}|p{4in}|}
+		\hline
+		%row no:1
+		\textbf{Name and Title} & INSERT HERE \\ %insert name and title here 
+		\hline
+		%row no:2
+		\textbf{Employer name / University Department Name} & 
+		INSERT HERE \\ % Employer name/University Department Name here
+		\hline
+		%row no:3
+		\textbf{Work Email} & 
+		INSERT HERE \\ %work email here
+		\hline
+		%row no:4
+		\textbf{Website Link (if available)} & 
+		INSERT HERE \\ %website link here 
+		\hline		
+	\end{tabular}
+\end{table}
+
+\subsection{Project Supervisor}
+%%%%%%%%% 
+%(Please add/delete boxes to meet the number of co-investigators you have. NB: If any have been added please mark them as new and include the date they started on the project)
+%%%%%%%%%
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|p{2in}|p{4in}|}
+		\hline
+		%row no:1
+		\textbf{Name and Title} & INSERT HERE \\ %insert name and title here 
+		\hline
+		%row no:2
+		\textbf{Employer name / University Department Name} & 
+		INSERT HERE \\ % Employer name/University Department Name here
+		\hline
+		%row no:3
+		\textbf{Work Email} & 
+		INSERT HERE \\ %work email here
+		\hline
+		%row no:4
+		\textbf{Website Link (if available)} & 
+		INSERT HERE \\ %website link here 
+		\hline		
+	\end{tabular}
+\end{table}
+
+
+\subsection{Challenge Description}
+\label{section:challenge}
+\textit{Guidance (Delete upon completion): Please provide a short summary of the challenge your team undertook.}
+
+%can use \itemize for lists
+
+\section{Lay Summary}
+\label{section:lay_summary}
+\textit{Guidance (Delete upon completion): Please provide a short publicity summary of the work you did to complete this challenge.}
+
+%%  Methodology here
+\section{Methodology}
+\label{section:methodology}
+\textit{Guidance (Delete upon completion): Please provide a short summary of the methodology included in this project (scientific and AI where appropriate). Please link to any existing datasets or software that you have used as part of this challenge. }
+
+%%Results summary here
+\section{Results}
+\label{section:results}
+\textit{Guidance (Delete upon completion): Please provide a summary of the results obtained during this challenge.}
+
+%%Conclusions here
+\section{Conclusions \& Future Work}
+\label{section:conclusions}
+\textit{Guidance (Delete upon completion): Please provide the conclusions for the work carried out in this challenge, and include any relevant comments and ideas on how this work could be continued in the future. }
+
+%%Outputs, Data & Software Links here
+\section{Outputs, Data \& Software Links}
+\label{section:outputs}
+\textit{Guidance (Delete upon completion): If you have produced any outputs (including poster presentations, GitHub repositories of data or software produced etc) please include details and links to these. }
+
+%% references here. If you have a .bib file or similar please also attach this to the email including the report.
+\bibliographystyle{vancouver}
+\bibliography{References}
+
+\listoffigures
+
+\end{document}
